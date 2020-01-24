@@ -1,0 +1,886 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Lora|Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/fdedc31e53.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Newsweek by Basskip</title>
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+    <header>
+      <div id="top-header" class="d-flex ">
+        <div id="date">Tue, Jan 21, 2020</div>
+        <div id="logo">
+          <svg viewBox="0 0 395.6 60">
+            <path
+              d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+            </path>
+          </svg>
+        </div>
+        <div id="buttons" class="d-flex align-items-center">
+          <div id="signin">Sign In</div>
+          <div id="subscribe">Subscribe <i class="fas fa-chevron-right"></i></div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="lower-header">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">U.S.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">World</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Business</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tech & Science</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Culture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Newsgeek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sport</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Health</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">The Debate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Vantage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Weather</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <main class="container-fluid ">
+    <div class="row">
+      <div class="col-lg col-md">
+        <div class="block-title">FEATURED STORIES</div>
+        <article class="big-story">
+          <div class="image">
+            <div class="category">CULTURE</div>
+          </div>
+          <div class="title">Iran Will Face 'Consequences' for Plane Downing, Canadian Minister Says</div>
+          <div class="blurb">"Today is not the day for blame," Canadian Foreign Affairs Minister François-Philippe
+            Champagne said. "Today is the day for answers."</div>
+        </article>
+        <div class="small-story">For Iranian Students in the U.S., Unrest Comes With Conflicting Emotions</div>
+        <article class="big-story">
+          <div class="image">
+            <div class="category">U.S.</div>
+          </div>
+          <div class="title">Michael Moore: Sanders-Warren Feud Is Example of Democrats Not Getting It Together</div>
+          <div class="blurb">The filmmaker said that when the feud began, he felt it was a turning point that will lead
+            to Donald Trump's re-election.</div>
+        </article>
+        <article class="big-story">
+          <div class="image">
+            <div class="category">NEWS</div>
+          </div>
+          <div class="title">Iran Plane Probe Will Draw on Lessons Learned From MH17: Response Group</div>
+          <div class="blurb">Representatives for the multinational International Coordination and Response Group set out
+            a five-point framework for cooperation with Iran to investigate the destruction of a passenger jet near
+            Tehran last week.</div>
+        </article>
+        <article class="big-story">
+          <div class="image">
+            <div class="category">CULTURE</div>
+          </div>
+          <div class="title">Kim Kardashian West and Kanye West Buy 'Just Mercy' Free Showings for Fans</div>
+          <div class="blurb">The tickets are available through a drawing.</div>
+        </article>
+      </div>
+      <div class="col-lg-5 col-md-7">
+        <div class="block-title">TOP STORY</div>
+        <article class="big-story">
+          <div class="image">
+            <div class="category">POLITICS</div>
+          </div>
+          <div class="title">GOP Resists White House Push to Dismiss Impeachment Trial</div>
+          <div class="blurb">GOP Senate leaders, as well as rank-and-file Republicans, don't agree with the president's
+            legal team about seeking a dismissal of the impeachment articles.</div>
+        </article>
+        <div class="small-story">Trump Administration Broke the Law by Withholding Ukraine Aid, Federal Watchdog Says
+        </div>
+
+        <div class="alt-block">
+          <div class="block-title">CULTURE & TRAVEL</div>
+          <div class="d-sm-flex flex-wrap">
+            <article class="alt">
+              <div class="image"></div>
+              <div class="info">
+                <div class="title">Women Changemakers of the Last Century</div>
+                <div class="blurb">In honor of the 100th anniversary of the passing of the 19th Amendment, which
+                  guaranteed women's right to vote in the U.S., we look at other impressive female advancements over the
+                  past 100 years.</div>
+                <div class="topic">Women</div>
+              </div>
+            </article>
+            <article class="alt">
+              <div class="image"></div>
+              <div class="info">
+                <div class="title">Relive the 'Star Wars' Saga at These Filming Locations</div>
+                <div class="blurb">From actual filming locations to space-themed destinations, sure to please even those
+                  who aren't die hard 'Star Wars' fans, keep the saga going with these 'Star Wars' destinations around
+                  the
+                  world.</div>
+                <div class="topic">Star Wars</div>
+              </div>
+            </article>
+            <article class="alt">
+              <div class="image"></div>
+              <div class="info">
+                <div class="title">Ancient Art of Falconry in Malta is Making a Comeback</div>
+                <div class="blurb">A recent revival of falconry offers a thrill to visitors who stand to play an
+                  integral role in efforts to protect the majestic Maltese bird.</div>
+                <div class="topic">Malta</div>
+              </div>
+            </article>
+            <article class="alt">
+              <div class="image"></div>
+              <div class="info">
+                <div class="title">Follow the Stars for These Must-See Celestial Events of 2020</div>
+                <div class="blurb">From spectacular meteor showers to rare eclipses, these are the best times to plan a
+                  stargazing vacation spent under the night sky.</div>
+                <div class="topic">meteor shower</div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="block-title">MORE STORIES</div>
+        <article class="more-story media">
+          <img src="https://d.newsweek.com/en/full/1561444/mitch-mcconnell.jpg" alt="Mitch McConnell"
+            title="Mitch McConnell">
+          <div class="media-body">
+            <div class="title">#MidnightMitch Trends Amid Backlash Over McConnell's Impeachment Trial Plan</div>
+            <div class="blurb">"A trial with no evidence—no existing record, no witnesses, no documents—isn't a trial at
+              all," said Democratic Senate Minority Leader Chuck Schumer.</div>
+          </div>
+        </article>
+        <article class="more-story media">
+          <img src="https://d.newsweek.com/en/full/1561241/us-army-national-guard-germany-training.jpg"
+            alt="us, army, national, guard, germany, training" title="us, army, national, guard, germany, training">
+          <div class="media-body">
+            <div class="title">Exclusive: U.S. Warns Its Troops in Germany Face 'Possible Imminent Attack'</div>
+            <div class="blurb">The U.S. military said "an unknown Jordanian extremist" who is "a loyalist to the
+              Jordanian kinglet" may be plotting to attack Tower Barracks in Grafenwohr or Tower Barracks, Dulmen,
+              according to a report seen by Newsweek.</div>
+          </div>
+        </article>
+        <article class="more-story media">
+          <img src="https://d.newsweek.com/en/full/1561475/logan-airport.jpg" alt="Logan airport" title="Logan airport">
+          <div class="media-body">
+            <div class="title">Protesters Flood Boston Airport After CBP Detains Iranian Student With Visa</div>
+            <div class="blurb">Senator Elizabeth Warren has joined calls for Shahab Dehghani's deportation to be halted.
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-lg">
+        <div class="block-title">OPINION</div>
+        <article class="op-article d-flex">
+          <div class="image rounded-circle"></div>
+          <div class="info">
+            <div class="title">Wait, Is That It? This Democratic Debate Should Scare Democrats</div>
+            <div class="author">BY NEWT GINGRICH</div>
+          </div>
+        </article>
+        <article class="op-article d-flex">
+          <div class="image rounded-circle"></div>
+          <div class="info">
+            <div class="title">Re-Election of a Staunch American Ally Means Choppy Waters for Taiwan</div>
+            <div class="author">BY ZHIQUN ZHU</div>
+          </div>
+        </article>
+        <article class="op-article d-flex">
+          <div class="image rounded-circle"></div>
+          <div class="info">
+            <div class="title">
+              Trump's Killing of Soleimani Will Continue to Shape the Middle East</div>
+            <div class="author">BY GALIP DALAY</div>
+          </div>
+        </article>
+        <article class="op-article d-flex">
+          <div class="image rounded-circle"></div>
+          <div class="info">
+            <div class="title">Republican Lawmakers' Blind Loyalty to Trump Is a Case Study in Cowardice</div>
+            <div class="author">BY RYAN THOMAS</div>
+          </div>
+        </article>
+        <article class="op-article d-flex">
+          <div class="image rounded-circle"></div>
+          <div class="info">
+            <div class="title">When It Comes to the Australian Bushfires, Rupert Murdoch Is an Arsonist</div>
+            <div class="author">BY MICHAEL E. MANN</div>
+          </div>
+        </article>
+        <article class="op-article d-flex border-0">
+          <div class="image rounded-circle"></div>
+          <div class="info">
+            <div class="title">Trump's Iran Attack Fits Right Into His Administration's Evangelical Priorities</div>
+            <div class="author">BY SERRA SIPPEL</div>
+          </div>
+        </article>
+        <div class="block-title">LATEST NEWS</div>
+        <article class="latest-article">
+          <div class="image"></div>
+          <div class="title">51 Percent of Americans Say the Senate Should Remove Trump From Office</div>
+        </article>
+        <article class="latest-article">
+          <div class="image"></div>
+          <div class="title">'Bachelor' Final Two Spoilers and What It Means for Hannah Brown</div>
+        </article>
+        <article class="latest-article">
+          <div class="image"></div>
+          <div class="title">'Bachelor' Spoilers: Everything You Need to Know About Episode 3</div>
+        </article>
+        <article class="latest-article">
+          <div class="image"></div>
+          <div class="title">Who Is the Best College Basketball Team? These Ranking Combine Polls, Odds</div>
+        </article>
+        <article class="latest-article">
+          <div class="image"></div>
+          <div class="title">Kellyanne Conway Compares Trump to MLK Jr.</div>
+        </article>
+        <article class="latest-article">
+          <div class="image"></div>
+          <div class="title">Rafael Nadal, Karolina Pliskova to Make Australian Open Debut on Tuesday</div>
+        </article>
+        <article class="latest-article border-0">
+          <div class="image"></div>
+          <div class="title">GOP Rep. Says He 'Definitely Would' Advise Senate to Call Bolton to Testify</div>
+        </article>
+        <div id="newsletter-ad">
+          <div class="title d-flex">
+            <span class="logo"></span>
+            SIGN UP FOR OUR NEWSLETTER
+          </div>
+          <div class="sign-up-button">SIGN UP <i class="fas fa-chevron-right"></i></div>
+          <div class="update">Update your preferences »</div>
+        </div>
+      </div>
+    </div>
+    <div class="magazine row">
+      <div class="feature col-md-3">
+        <div class="img-wrapper">
+          <img src="https://d.newsweek.com/en/full/1560513/january-24-31-2020-cover.jpg">
+          <div class="issue">JANUARY 31 ISSUE</div>
+        </div>
+        <div class="see-all">SEE ALL FEATURES <i class="fas fa-chevron-right"></i></div>
+      </div>
+      <div class="col-md-9">
+        <div class="magazine-title d-flex justify-content-center align-items-center">
+          <span class="logo"></span>
+          <div class="header">IN THE MAGAZINE</div>
+        </div>
+        <div class="row">
+          <div class="magazine-story col-md-4">
+            <div class="image">
+              <img src="https://d.newsweek.com/en/full/1559646/fe-nigeria-01-523787136-banner.webp" alt="" srcset="">
+            </div>
+            <div class="mag-category">COVER</div>
+            <div class="category">WORLD</div>
+            <div class="title">Black China: Africa's First Superpower Is Coming Sooner Than You Think</div>
+          </div>
+          <div class="magazine-story col-md-4">
+            <div class="image">
+              <img src="https://d.newsweek.com/en/full/1559668/fe-iran-01-1192553955-banner.webp" alt="" srcset="">
+            </div>
+            <div class="mag-category">FEATURES</div>
+            <div class="category">WORLD</div>
+            <div class="title">The Iran Crisis Comes With Serious Risks for America's Economy</div>
+          </div>
+          <div class="magazine-story col-md-4">
+            <div class="image">
+              <img src="https://d.newsweek.com/en/full/1558983/wirecutter-credit-card-debt.webp" alt="" srcset="">
+            </div>
+            <div class="mag-category">PERISCOPE</div>
+            <div class="category">BUSINESS</div>
+            <div class="title">Got Holiday Debt? Pay Off Your Credit Cards Quickly with These 5 Tips</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="magazine-story col-md-3">
+        <div class="image">
+          <img src="https://d.newsweek.com/en/full/1559784/per-meghanmarklemutiny-1198091143-banner.webp" alt=""
+            srcset="">
+        </div>
+        <div class="mag-category">PERISCOPE</div>
+        <div class="category">CULTURE</div>
+        <div class="title">Meghan Markle Being a Black Woman in Royal Family Was Never Going to Work</div>
+      </div>
+      <div class="magazine-story col-md-3">
+        <div class="image">
+          <img src="https://d.newsweek.com/en/full/1559828/cul-chanelqanda-56226855-banner.webp" alt="" srcset="">
+        </div>
+        <div class="mag-category">DOWNTIME</div>
+        <div class="category">CULTURE</div>
+        <div class="title">Historian Anne de Courcy on What We Can Learn From Coco Chanel</div>
+      </div>
+      <div class="magazine-story col-md-3">
+        <div class="image">
+          <img src="https://d.newsweek.com/en/full/1559766/cul-map-1097506118-banner.webp" alt="" srcset="">
+        </div>
+        <div class="mag-category">DOWNTIME</div>
+        <div class="category">CULTURE</div>
+        <div class="title">Women Changemakers of the Last Century</div>
+      </div>
+      <div class="magazine-story featured-image col-md-3">
+        <div class="image">
+          <img src="https://d.newsweek.com/en/full/1559861/night-terror.jpg" alt="" srcset="">
+          <div class="mag-category">IN FOCUS</div>
+        </div>
+        <div class="title">NIGHT TERROR</div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+      <span class="logo"></span>
+      <div class="header">NEWSWEEK CONVERSATIONS</div>
+    </div>
+    <div class="conversations row">
+      <div class="conversation large row col-sm-8">
+        <div class="image col-sm-8"
+          style="background-image: url(https://d.newsweek.com/en/full/1555347/newsweek-conversations-paul-wesley.jpg);">
+          <div class="play">
+            <div class="arrow"></div>
+          </div>
+        </div>
+        <div class="info col-sm-4">
+          <div class="title">The Vampire Diaries' Paul Wesley Talks Fame, Directing and CBS' 'Tell Me a Story'</div>
+          <div class="blurb">"I try my best not to drink the Kool-Aid too much, because that can be a slippery slope,"
+            Paul Wesley said about dealing with fame.
+          </div>
+          <div class="time">20:00</div>
+        </div>
+      </div>
+      <div class="col d-flex flex-column">
+        <div class="conversation small row">
+          <div class="image col-5"
+            style="background-image: url(https://d.newsweek.com/en/full/1555350/newsweek-conversations-leslie-grossman.jpg)">
+            <div class="play">
+              <div class="arrow"></div>
+            </div>
+          </div>
+          <div class="info col-7">
+            <div class="title">'American Horror Story's' Leslie Grossman Is the Definition of a Great Hollywood
+              Character Actress</div>
+            <div class="time">21:04</div>
+          </div>
+        </div>
+        <div class="conversation small row">
+          <div class="image col-5"
+            style="background-image: url(https://d.newsweek.com/en/full/1555351/newsweek-conversations-willem-dafoe.jpg)">
+            <div class="play">
+              <div class="arrow"></div>
+            </div>
+          </div>
+          <div class="info col-7">
+            <div class="title">Newsweek Conversations with Actor Willem Dafoe</div>
+            <div class="time">20:49</div>
+          </div>
+        </div>
+        <div class="conversation small row">
+          <div class="image col-5"
+            style="background-image: url(https://d.newsweek.com/en/full/1555352/newsweek-conversations-matthew-modine.jpg)">
+            <div class="play">
+              <div class="arrow"></div>
+            </div>
+          </div>
+          <div class="info col-7">
+            <div class="title">‘Stranger Things’ Star Matthew Modine On New Movie ‘Miss Virginia’</div>
+            <div class="time">17:39</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+      <span class="logo"></span>
+      <div class="header">EDITOR'S PICK</div>
+    </div>
+    <div class="row picks">
+      <article class="big-story col-lg-3 col-md-6">
+        <div class="image">
+          <div class="category">TECH & SCIENCE</div>
+        </div>
+        <div class="title">Walking Sharks That Can Lift Themselves Out of Water Discovered</div>
+        <div class="blurb">The creatures were isolated millions of years ago when the continents were shifting around
+          the planet, researchers say.</div>
+      </article>
+      <article class="big-story col-lg-3 col-md-6">
+        <div class="image">
+          <div class="category">TECH & SCIENCE</div>
+        </div>
+        <div class="title">Walking Sharks That Can Lift Themselves Out of Water Discovered</div>
+        <div class="blurb">The creatures were isolated millions of years ago when the continents were shifting around
+          the planet, researchers say.</div>
+      </article>
+      <article class="big-story col-lg-3 col-md-6">
+        <div class="image">
+          <div class="category">TECH & SCIENCE</div>
+        </div>
+        <div class="title">Walking Sharks That Can Lift Themselves Out of Water Discovered</div>
+        <div class="blurb">The creatures were isolated millions of years ago when the continents were shifting around
+          the planet, researchers say.</div>
+      </article>
+      <article class="big-story col-lg-3 col-md-6">
+        <div class="image">
+          <div class="category">TECH & SCIENCE</div>
+        </div>
+        <div class="title">Walking Sharks That Can Lift Themselves Out of Water Discovered</div>
+        <div class="blurb">The creatures were isolated millions of years ago when the continents were shifting around
+          the planet, researchers say.</div>
+      </article>
+      <article class="big-story col-lg-3 col-md-6">
+        <div class="image">
+          <div class="category">TECH & SCIENCE</div>
+        </div>
+        <div class="title">Walking Sharks That Can Lift Themselves Out of Water Discovered</div>
+        <div class="blurb">The creatures were isolated millions of years ago when the continents were shifting around
+          the planet, researchers say.</div>
+      </article>
+      <article class="big-story col-lg-3 col-md-6">
+        <div class="image">
+          <div class="category">TECH & SCIENCE</div>
+        </div>
+        <div class="title">Walking Sharks That Can Lift Themselves Out of Water Discovered</div>
+        <div class="blurb">The creatures were isolated millions of years ago when the continents were shifting around
+          the planet, researchers say.</div>
+      </article>
+      <article class="big-story col-lg-3 col-md-6">
+        <div class="image">
+          <div class="category">TECH & SCIENCE</div>
+        </div>
+        <div class="title">Walking Sharks That Can Lift Themselves Out of Water Discovered</div>
+        <div class="blurb">The creatures were isolated millions of years ago when the continents were shifting around
+          the planet, researchers say.</div>
+      </article>
+      <article class="big-story col-lg-3 col-md-6">
+        <div class="image">
+          <div class="category">TECH & SCIENCE</div>
+        </div>
+        <div class="title">Walking Sharks That Can Lift Themselves Out of Water Discovered</div>
+        <div class="blurb">The creatures were isolated millions of years ago when the continents were shifting around
+          the planet, researchers say.</div>
+      </article>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+      <span class="logo slideshow"></span>
+      <div class="header">FEATURED SLIDESHOWS</div>
+    </div>
+    <div class="row slideshows">
+      <article class="big-story col-md-4">
+        <div class="image">
+          <div class="slide-count">11</div>
+        </div>
+        <div class="title">Relive the 'Star Wars' Saga at These Filming Locations</div>
+      </article>
+      <article class="big-story col-md-4">
+        <div class="image">
+          <div class="slide-count">12</div>
+        </div>
+        <div class="title">Inside the Last Bohemian Apartments of the Storied Hotel Chelsea</div>
+      </article>
+      <article class="big-story col-md-4">
+        <div class="image">
+          <div class="slide-count">25</div>
+        </div>
+        <div class="title">A Look at Every Starbucks Winter Holiday Cup By Year from 1997 to 2019</div>
+      </article>
+      <article class="big-story col-md-4">
+        <div class="image">
+          <div class="slide-count">19</div>
+        </div>
+        <div class="title">What Starbucks Christmas Holiday Drinks Are Available This Year?</div>
+      </article>
+      <article class="big-story col-md-4">
+        <div class="image">
+          <div class="slide-count">12</div>
+        </div>
+        <div class="title">Meet the Master Carver Who Turns Pumpkins Into Portraits</div>
+      </article>
+      <article class="big-story col-md-4">
+        <div class="image">
+          <div class="slide-count">40</div>
+        </div>
+        <div class="title">Our Cosplay Favorites from NYCC 2019</div>
+      </article>
+    </div>
+    <div class="category-title">U.S.</div>
+    <div class="row">
+      <article class="basic-story col-md-4">
+        <div class="image">
+          <img src="https://d.newsweek.com/en/full/1562068/olivia-wilde-jason-sudeikis-disneyland-sword.webp" alt="">
+        </div>
+        <div class="title">Man Rips Sword From Stone at Disneyland, Does Not Become King</div>
+      </article>
+      <article class="basic-story col-md-4">
+        <div class="image">
+          <img src="https://d.newsweek.com/en/full/1562043/rick-scott.webp" alt="">
+        </div>
+        <div class="title">Republican Senator Says He's 'Absolutely' Open to Witnesses for Trump Trial</div>
+      </article>
+      <div class="col-md-4">
+        <article class="media basic-story-small">
+          <img src="https://d.newsweek.com/en/full/1561785/drew-holcomb-music-university-tennessee.webp"
+            alt="Drew Holcomb" title="Drew Holcomb">
+          <div class="media-body">
+            <div class="title">How Studying History in College Gave Drew Holcomb Lessons in Songwriting</div>
+          </div>
+        </article>
+        <article class="media basic-story-small">
+          <img data-src="https://d.newsweek.com/en/full/1562030/rael-raelians-leader-religion-ufo.jpg"
+            alt="Rael, Raelians’ leader, religion, UFO" title="Rael, Raelians’ leader, religion, UFO" width="135"
+            height="90" class="mapping-sm_thumb lazysize lazyloaded"
+            src="https://d.newsweek.com/en/full/1562030/rael-raelians-leader-religion-ufo.jpg?w=135&amp;h=90&amp;f=21e2862ca918f8a19ac645b4e4d621b1">
+          <div class="media-body">
+            <div class="title">The Naked Truth About The Raelians UFO Religion</div>
+          </div>
+        </article>
+        <article class="media basic-story-small">
+          <img
+            data-src="https://d.newsweek.com/en/full/1562012/senate-impeachment-trial-republicans-watch.jpg?w=135&amp;h=90&amp;f=a55fd0317ac0f3f821765c401afd1fd8"
+            alt="senate impeachment trial republicans to watch" title="senate impeachment trial republicans to watch"
+            width="135" height="90" class="mapping-sm_thumb lazysize lazyloaded"
+            src="https://d.newsweek.com/en/full/1562012/senate-impeachment-trial-republicans-watch.jpg?w=135&amp;h=90&amp;f=a55fd0317ac0f3f821765c401afd1fd8">
+          <div class="media-body">
+            <div class="title">These Republican Senators Could Vote to Remove Donald Trump From Office</div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="category-title">World</div>
+    <div class="row">
+      <article class="basic-story col-md-4">
+        <div class="image">
+          <img src="https://d.newsweek.com/en/full/1562009/man-climbs-barbed-wire-fence.webp" alt="">
+        </div>
+        <div class="title">Escaped Prisoner Sends Card to Prison Directors, 'Greetings From Thailand'</div>
+      </article>
+      <article class="basic-story col-md-4">
+        <div class="image">
+          <img src="https://d.newsweek.com/en/full/1561897/japan-coronavirus.webp" alt="">
+        </div>
+        <div class="title">Japanese Shop Owner Tries to Ban Chinese Tourists Over Coronavirus Fears</div>
+      </article>
+      <div class="col-md-4">
+        <article class="media basic-story-small">
+          <img src="https://d.newsweek.com/en/full/1561900/9-11-memorial.webp">
+          <div class="media-body">
+            <div class="title">Publisher Issues Correction After Book Suggests 9/11 Was Linked to CIA</div>
+          </div>
+        </article>
+        <article class="media basic-story-small">
+          <img src="https://d.newsweek.com/en/full/1561796/machu-picchu.webp">
+          <div class="media-body">
+            <div class="title">Cameras to Be Installed at Machu Picchu After Tourists Cause Damage</div>
+          </div>
+        </article>
+        <article class="media basic-story-small">
+          <img src="https://d.newsweek.com/en/full/1561772/jeff-bezos.webp">
+          <div class="media-body">
+            <div class="title">
+              Mohammed bin Salman Allegedly Hacked Bezos' Phone: Report</div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="category-title">Business</div>
+    <div class="row">
+      <article class="basic-story col-md-4">
+        <div class="image">
+          <img
+            src="https://d.newsweek.com/en/full/1560119/trump-economy-destroying-farmers-agriculture.webp?w=397&h=265&f=9afe4f90c50da3e9bfce97a1943fa705"
+            alt="">
+        </div>
+        <div class="title">Former AT&T Broadband CEO: Trump Tax Cuts 'Destroying' Farmers, Agriculture</div>
+      </article>
+      <article class="basic-story col-md-4">
+        <div class="image">
+          <img
+            src="https://d.newsweek.com/en/full/1558619/markets-fall-after-news-irans-retaliation-against-us.webp?w=397&h=265&f=bb5b1526239219c69ba181066d862400"
+            alt="">
+        </div>
+        <div class="title">97 Percent of CFOs Surveyed Believe Economic Slowdown or Recession Coming</div>
+      </article>
+      <div class="col-md-4">
+        <article class="media basic-story-small">
+          <img
+            src="https://d.newsweek.com/en/full/1556871/workers-across-country-demonstrate-higher-minimum-wage.webp?w=135&h=90&f=447d1606e7b2efd0edbed5c777e96250">
+          <div class="media-body">
+            <div class="title">Federal Minimum Wage Has Not Changed in a Decade; 21 States Still Use It</div>
+          </div>
+        </article>
+        <article class="media basic-story-small">
+          <img
+            src="https://d.newsweek.com/en/full/1556147/usps-post-office-stamps-price.webp?w=135&h=90&f=f7fb9511cace3c7e81365fb57bbdb945">
+          <div class="media-body">
+            <div class="title">Stamp Price Increases 2020: USPS Stamp, Mail Rates Going Up in January?</div>
+          </div>
+        </article>
+        <article class="media basic-story-small">
+          <img
+            src="https://d.newsweek.com/en/full/1556275/donald-trump.webp?w=135&h=90&f=0a507e52ee6c2f5d264ca0c6b6ed2d99">
+          <div class="media-body">
+            <div class="title">Market Posts Records Under Trump, but Obama-era Markets Performed Better</div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="category-title">Tech & Science</div>
+    <div class="row">
+      <article class="basic-story col-md-4">
+        <div class="image">
+          <img
+            src="https://d.newsweek.com/en/full/1561960/metalithic-tomb.webp?w=397&h=265&f=2d845c729f80c3659f24c1c85e4270fb"
+            alt="">
+        </div>
+        <div class="title">Ancient Tombs Reveal 'Valley', 'Hill' People That Coexisted 5,000 Years Ago</div>
+      </article>
+      <article class="basic-story col-md-4">
+        <div class="image">
+          <img
+            src="https://d.newsweek.com/en/full/1561951/copper-mineral.webp?w=397&h=265&f=024a942da849b166340b6682809304cb"
+            alt="">
+        </div>
+        <div class="title">Ancient Italy Was a Hub of Metal Exchange Thousands of Years Ago</div>
+      </article>
+      <div class="col-md-4">
+        <article class="media basic-story-small">
+          <img
+            src="https://d.newsweek.com/en/full/1561895/elon-musk.webp?w=135&h=90&f=d5627f5dbe01f93321f1ba12d601b4a9">
+          <div class="media-body">
+            <div class="title">Trump Says Musk Has to Build a 'Big Plant' in U.S 'Because We Help Him'</div>
+          </div>
+        </article>
+        <article class="media basic-story-small">
+          <img
+            src="https://d.newsweek.com/en/full/1561851/libra-logo.webp?w=135&h=90&l=0&t=0&f=cc03bc6d9283e7eae20d31daf3b2dda9">
+          <div class="media-body">
+            <div class="title">Facebook's Cryptocurrency Project Dealt Fresh Blow as Major Partner Exits</div>
+          </div>
+        </article>
+        <article class="media basic-story-small">
+          <img
+            src="https://d.newsweek.com/en/full/1561923/honey-bee.webp?w=135&h=90&f=774354e32a924060930b5965c5848714">
+          <div class="media-body">
+            <div class="title">Insecticides Have Become More Toxic to Bees Over the Last 20 Years</div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="category-title">Culture</div>
+    <div class="row">
+      <article class="basic-story col-md-4">
+        <div class="image">
+          <img
+            src="https://d.newsweek.com/en/full/1561763/meet-bewitching-new-cast-members-chilling-adventures-sabrina.webp?w=397&h=265&f=fcb941cd00a23a9dda50a17524aebfbe"
+            alt="">
+        </div>
+        <div class="title">Meet the Bewitching New Cast Members of 'Chilling Adventures of Sabrina'</div>
+      </article>
+      <article class="basic-story col-md-4">
+        <div class="image">
+          <img
+            src="https://d.newsweek.com/en/full/1561927/pokemon-mewtwo-strikes-back.webp?w=397&h=265&l=51&t=27&f=c6074a0830fe35d8eed1dc0a6d7c0486"
+            alt="">
+        </div>
+        <div class="title">'Pokemon: Mewtwo Strikes Back—Evolution' Release Date on Netflix Revealed</div>
+      </article>
+      <div class="col-md-4">
+        <article class="media basic-story-small">
+          <img
+            src="https://d.newsweek.com/en/full/1561935/rupaul-charles.webp?w=135&h=90&f=b08ed05a56f91ab4a12067aeda886dcc">
+          <div class="media-body">
+            <div class="title">RuPaul Will Host 'Saturday Night Live' For the First Time</div>
+          </div>
+        </article>
+        <article class="media basic-story-small">
+          <img
+            src="https://d.newsweek.com/en/full/1561904/power-prequel-50-cent.webp?w=135&h=90&l=63&t=17&f=f05327808af34e545ea75454505e987f">
+          <div class="media-body">
+            <div class="title">
+              'Power' Prequel: All We Know About 50 Cent's Potential Spin Off 'TGE'</div>
+          </div>
+        </article>
+        <article class="media basic-story-small">
+          <img
+            src="https://d.newsweek.com/en/full/1561798/awkwafina-nora-queens.webp?w=135&h=90&f=2846042369f1f95408c89d8743d2d263">
+          <div class="media-body">
+            <div class="title">'Awkwafina Is Nora From Queens' Stars Talk Asian American Representation</div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="category-title">Sports</div>
+    <div class="row">
+      <article class="basic-story col-md-4">
+        <div class="image">
+          <img
+            src="https://d.newsweek.com/en/full/1562070/silvio-de-sousa.webp?w=397&h=265&f=6dc7548a6735146d5137d3b06d917df3"
+            alt="">
+        </div>
+        <div class="title">College Basketball Experts Weigh In On Kansas/KSU Punishments After Brawl</div>
+      </article>
+      <article class="basic-story col-md-4">
+        <div class="image">
+          <img
+            src="https://d.newsweek.com/en/full/1561832/rafael-nadal-australian-open.webp?w=397&h=265&f=60d5f5dba654daf8cfaebb49382bfb2b"
+            alt="">
+        </div>
+        <div class="title">Australian Open: Rafael Nadal, Daniil Medvedev in Action in Second Round</div>
+      </article>
+      <div class="col-md-4">
+        <article class="media basic-story-small">
+          <img
+            src="https://d.newsweek.com/en/full/1561939/jon-rahm-tiger-woods.webp?w=135&h=90&f=cc9edf9402e2ceb65ecbe7b74ba73610">
+          <div class="media-body">
+            <div class="title">Farmer Insurance Open Tee Times: Tiger Paired with Jon Rahm on Thursday</div>
+          </div>
+        </article>
+        <article class="media basic-story-small">
+          <img
+            src="https://d.newsweek.com/en/full/1561969/zion-williamson.webp?w=135&h=90&f=3a5082e0ff40cc51461d80563d74934f">
+          <div class="media-body">
+            <div class="title">Zion Williamson Most Memorable Moments Before His NBA Debut</div>
+          </div>
+        </article>
+        <article class="media basic-story-small">
+          <img
+            src="https://d.newsweek.com/en/full/1561948/basketball.webp?w=135&h=90&f=f1ecb4d35b8700795fc3bc26ca109800">
+          <div class="media-body">
+            <div class="title">Man Headbutts Referee During Middle School Basketball Game, Gets Banned</div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="row sub-newsletter-block">
+      <div class="col-lg-7 col-xl-8">
+        <div class="block-title">SUBSCRIBE</div>
+        <div class="sub-block block d-md-flex align-items-center">
+          <div class="past-covers">
+            <img
+              src="https://d.newsweek.com/en/full/1556038/january-03-17-2020-cover.jpg?w=170&q=95&f=5ee630dad7d5beb00d233b14fbde0b1a"
+              alt="" id="second-recent">
+            <img
+              src="https://d.newsweek.com/en/full/1560513/january-24-31-2020-cover.jpg?w=170&q=95&f=e37a347d93374c1cd0542ffe614ab3b4"
+              alt="" id="most-recent">
+          </div>
+          <div class="info">
+            <div class="title">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</div>
+            <div class="blurb">All Access + Weekly Delivery.<br>
+              Choose A Membership That's Perfect for You!</div>
+            <div class="button">SUBSCRIBE <i class="fas fa-chevron-right"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-xl-4">
+        <div class="block-title">NEWSLETTER</div>
+        <div class="news-block block d-md-flex">
+          <div class="image"></div>
+          <div class="info">
+            <div class="title">The Starting 5</div>
+            <div class="blurb">Take back your inbox. Sign up for our newsletter and start making sense of the world
+              around you.</div>
+            <div class="button">SIGN UP <i class="fas fa-chevron-right"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="top-footer d-sm-flex align-items-end">
+        <div id="logo">
+          <svg viewBox="0 0 395.6 60">
+            <path
+              d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+            </path>
+          </svg>
+        </div>
+        <div class="copyright">© 2020 NEWSWEEK</div>
+        <div class="socials">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-tumblr"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="editions">
+          <span class="editions-label">Editions: </span>
+          <ul class="editions-list">
+            <li>U.S. Edition</li>
+            <li>日本</li>
+            <li>Pakistan</li>
+            <li>Polska</li>
+            <li>România</li>
+          </ul>
+        </div>
+        <div class="links">
+          <ul class="links-list">
+            <li>About Us</li>
+            <li>Corrections</li>
+            <li>Contact Us</li>
+            <li>Editorial Guidelines</li>
+            <li>Advertise</li>
+            <li>Copyright</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Cookie Policy</li>
+            <li>Terms of Sale</li>
+            <li>Archive</li>
+            <li>Annoucements</li>
+            <li>Consent preferences</li>
+          </ul>
+        </div>
+      </div>
+    </footer class="row">
+  </main>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
